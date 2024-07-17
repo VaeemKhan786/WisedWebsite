@@ -39,9 +39,8 @@ function Landing() {
               </button>
             </div>
           </div>
-          {/* lg:w-[50%] lg:h-[100%] lg:top-[40%] lg:right-[50%]  lg:-translate-y-[50%] 2xl:w-[1116px] 2xl:h-[1284px] 2xl:translate-y-[none]  2xl:right-[100%] 2xl:top-[-16%] */}
           <img
-            className=" w-[393px] h-[363px] sm:h-[661px] sm:w-[661px]  absolute top-[5px] sm:top-[-12px]  left-[50%] -translate-x-[50%] lg:top-[-10%] lg:left-[75%] xl:w-[75%] xl:h-[100%] xl:left-[72%] xl:top-[-10%]"
+            className=" w-[393px] h-[363px] sm:h-[661px] sm:w-[661px]  absolute top-[5px] sm:top-[-12px]  left-[50%] -translate-x-[50%] lg:top-[-10%] lg:left-[75%] xl:w-[75%] xl:h-[120%] xl:left-[72%] xl:top-[-10%]"
             src={LandingMain}
             alt="image of populat person"
           />
