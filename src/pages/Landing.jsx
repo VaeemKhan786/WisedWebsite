@@ -20,7 +20,7 @@ function Landing() {
       <div className="">
         <div className="lg:max-w-[1842px] mx-auto px-3 lg:h-[100vh]  2xl:h-[110vh] lg:grid relative overflow-hidden">
           <div className="w-full flex items-center lg:items-start lg:justify-center flex-col lg:w-6/12">
-            <p className="text-[20px] sm:text-[26px] lg:text-[44px] text-black font-normal lg:font-normal ff_inter text-center lg:text-start leading-[24px] sm:leading-[40px] lg:leading-[80px] max-w-[300px] lg:max-w-[100%] mt-[31px] sm:mt-[25px] 2xl:text-[64px]">
+            <p className="text-[20px] sm:text-[26px] lg:text-[44px] text-{#BEC1C3} font-normal lg:font-normal ff_inter text-center lg:text-start leading-[24px] sm:leading-[40px] lg:leading-[80px] max-w-[300px] lg:max-w-[100%] mt-[31px] sm:mt-[25px] 2xl:text-[64px]">
               Empowering Educators,{" "}
               <span className="lg:block">Inspiring Learners</span>
             </p>
