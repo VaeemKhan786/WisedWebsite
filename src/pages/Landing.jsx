@@ -5,6 +5,7 @@ import Peer from "../assets/images/svg/peer.svg";
 import Personalised from "../assets/images/svg/personalised.svg";
 import Environment from "../assets/images/svg/environment.svg";
 import Learning from "../assets/images/png/learning.png";
+import { Link } from "react-router-dom";
 
 function Landing() {
   const [question, setQuestion] = useState(null);
@@ -15,6 +16,8 @@ function Landing() {
       setQuestion(value);
     }
   };
+
+  // className="fixed top-0 left-0 w-full h-full flex items-center justify-center z-50"
   return (
     <div className="bg-white">
       <div className="">
@@ -33,14 +36,17 @@ function Landing() {
                 for you to share and gain knowledge.
               </span>
             </p>
-            <div className="text-center mt-[35px] sm:mt-[37.5px] lg:text-start w-full lg:mt-[90px]">
-              <button className="ff_inter font-normal text-white text-sm lg:text-xl py-3 px-6 sm:px-7 bg-[#4D8AFF] rounded-[100px] lg:font-medium 2xl:text-2xl 2xl:px-10 2xl:py-[25px]">
-                Get started
-              </button>
-            </div>
+            <Link to="login">
+              <div className="text-center mt-[35px] sm:mt-[37.5px] lg:text-start w-full lg:mt-[90px]">
+                <button className="ff_inter font-normal text-white text-sm lg:text-xl py-3 px-6 sm:px-7 bg-[#4D8AFF] rounded-[100px] lg:font-medium 2xl:text-2xl 2xl:px-10 2xl:py-[25px]">
+                  Get started
+                </button>
+              </div>
+            </Link>
           </div>
+          {/* lg:w-[50%] lg:h-[100%] lg:top-[40%] lg:right-[50%]  lg:-translate-y-[50%] 2xl:w-[1116px] 2xl:h-[1284px] 2xl:translate-y-[none]  2xl:right-[100%] 2xl:top-[-16%] */}
           <img
-            className=" w-[393px] h-[363px] sm:h-[661px] sm:w-[661px]  absolute top-[5px] sm:top-[-12px]  left-[50%] -translate-x-[50%] lg:top-[-10%] lg:left-[75%] xl:w-[75%] xl:h-[120%] xl:left-[72%] 2xl:h-[100%] xl:top-[-10%]"
+            className=" w-[393px] h-[363px] sm:h-[661px] sm:w-[661px]  absolute top-[5px] sm:top-[-12px]  left-[50%] -translate-x-[50%] lg:top-[-10%] lg:left-[75%] xl:w-[75%] xl:h-[120%] xl:left-[72%] xl:top-[-10%]"
             src={LandingMain}
             alt="image of populat person"
           />
