@@ -1,7 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 export default function VerifyPopUp() {
+  // const data =
+  const [data, setData] = useState([]);
+  const [error, setError] = useState();
+
+  function val(e) {
+    const { value } = e.target;
+  }
   return (
     <>
       <div className="backdrop-blur-[10px] z-50 fixed top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] h-[100vh] w-full"></div>
@@ -41,26 +48,33 @@ export default function VerifyPopUp() {
             </div>
           </div>
           <p className="text-center font-medium text-md max-md:text-xs mt-20 md:mt-4">
-            Please enter the 4 digit code sent on your mail.
+            {data.length >= 4
+              ? "Please enter the 4 digit code sent on your mail."
+              : "Incorrect code. Please try again"}
           </p>
-          <form>
+
+          <form onSubmit={(e) => e.preventDefault()}>
             <div className="flex justify-center mt-3 md:mt-6 space-x-4">
               <input
+                onChange={(e) => data.push(e.target.value)}
                 type="text"
                 maxlength="1"
                 className="border-b-2 border-black w-12 h-12 text-center text-xl max-md:text-base outline-none"
               />
               <input
+                onChange={(e) => data.push(e.target.value)}
                 type="text"
                 maxlength="1"
                 className="border-b-2 border-black w-12 h-12 text-center text-xl max-md:text-base outline-none"
               />
               <input
+                onChange={(e) => data.push(e.target.value)}
                 type="text"
                 maxlength="1"
                 className="border-b-2 border-black w-12 h-12 text-center text-xl max-md:text-base outline-none"
               />
               <input
+                onChange={(e) => data.push(e.target.value)}
                 type="text"
                 maxlength="1"
                 className="border-b-2 border-black w-12 h-12 text-center text-xl max-md:text-base outline-none"
@@ -71,8 +85,11 @@ export default function VerifyPopUp() {
             </p>
 
             <div className="text-center">
-              <button className="md:mt-4 mt-[52px] px-1 md:px-0 w-full max-sm:text-xs">
-                <button className="font-normal text-sm sm:text-base  text-white  bg-primary  duration-500  h-[56px] px-5 max-w-[330px] w-full sm:px-36 rounded-[100px] text-nowrap ">
+              <button
+                onClick={val}
+                className="md:mt-4 mt-[52px] px-1 md:px-0 w-full max-sm:text-xs"
+              >
+                <button className="font-normal text-sm sm:text-base  text-white  bg-[#4D8AFF]  duration-500  h-[56px] px-5 max-w-[330px] w-full sm:px-36 rounded-[100px] text-nowrap ">
                   Verify
                 </button>
               </button>
@@ -83,13 +100,13 @@ export default function VerifyPopUp() {
           </p>
           <p className="font-normal text-[12px] text-[#BEC1C3] text-center">
             {" "}
-            <Link to="/">
+            <Link to="/terms">
               <button className="font-semibold text-[#4D8AFF] mx-2">
                 Terms of use
               </button>
             </Link>
             and our
-            <Link to="/">
+            <Link to="/privacy">
               <button className="font-semibold text-[#4D8AFF] mx-2">
                 Privacy Policy
               </button>

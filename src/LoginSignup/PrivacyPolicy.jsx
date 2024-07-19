@@ -1,10 +1,13 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom';
 
 export default function PrivacyPolicy() {
+  const navigate = useNavigate();
   return (
     <>
       <div className="px-4 sm:px-5 md:px-6 sm:pb-10 flex flex-col">
-        <Link
+        <button
+          onClick={() => navigate(-1)}
           className="flex items-center gap-4 sticky top-0 bg-white w-full py-10 max-md:py-8 max-sm:pt-3 max-sm:pb-6"
           to="/verification"
         >
@@ -24,7 +27,7 @@ export default function PrivacyPolicy() {
           <span className="text-base text-[#000000] font-semibold">
             Privacy Policy
           </span>
-        </Link>
+        </button>
         <p className="font-normal text-xs sm:text-base text-[#000000] md:leading-6">
           Korem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
           turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec

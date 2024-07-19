@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
-.ff_inter{
-    font-family: "Inter", sans-serif;
+*{
+
+font-family: "Inter", sans-serif !important;
 }
 .svg_hover{
     transition: 2s;
@@ -10,4 +11,7 @@
 .svg_hover:hover svg path{
     opacity: 100%;
     transition: 2s all
+}
+.scroll_hidden{
+overflow-x: hidden !important;
 }
