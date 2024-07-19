@@ -40,7 +40,7 @@ function Landing() {
             </div>
           </div>
           <img
-            className=" w-[393px] h-[363px] sm:h-[661px] sm:w-[661px]  absolute top-[5px] sm:top-[-12px]  left-[50%] -translate-x-[50%] lg:top-[-10%] lg:left-[75%] xl:w-[75%] xl:h-[120%] xl:left-[72%] xl:top-[-10%]"
+            className=" w-[393px] h-[363px] sm:h-[661px] sm:w-[661px]  absolute top-[5px] sm:top-[-12px]  left-[50%] -translate-x-[50%] lg:top-[-10%] lg:left-[75%] xl:w-[75%] xl:h-[120%] xl:left-[72%] 2xl:h-[100%] xl:top-[-10%]"
             src={LandingMain}
             alt="image of populat person"
           />

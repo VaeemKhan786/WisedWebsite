@@ -7,6 +7,11 @@ import Upto from "../assets/images/svg/upto.svg";
 import Wealth from "../assets/images/svg/wealth.svg";
 import Developer from "../assets/images/png/developer.png";
 import MicroSoft from "../assets/images/svg/microSoft.svg";
+import Darrell from "../assets/images/svg/darell.svg"
+import Dianne from "../assets/images/svg/dianne.svg"
+import Floyd from "../assets/images/svg/floyd.svg"
+import Ralph from "../assets/images/svg/ralp.svg"
+import Kristin from "../assets/images/svg/kristin.svg"
 
 export const data = {
   create: [
@@ -79,4 +84,32 @@ export const data = {
       company: MicroSoft,
     },
   ],
+  buttons:["Education","Literature","Biology","Art and Design","Environmental Studies","Sociology","Technology","History","Chemistry","Political Science","Philosophy","Language and Linguistics","Economics","Mathematics","Physics","Science","English Lang","Sanskrit","Physical Education","Social Science","Hindi Language","Hindi Literature"],
+  recommended:[
+    {
+      name :"Darrell Steward",
+      post:"QA Engineer",
+      src : Darrell,
+    },
+    {
+      name :"Dianne Russell",
+      post:"Programmer Analyst",
+      src : Dianne,
+    },
+    {
+      name :"Floyd Miles",
+      post:"Architect",
+      src : Floyd,
+    },
+    {
+      name :"Ralph Edwards",
+      post:"Operating Officer",
+      src : Ralph,
+    },
+    {
+      name :"Kristin Watson",
+      post:"Program Manager",
+      src : Kristin,
+    },
+  ]
 };
