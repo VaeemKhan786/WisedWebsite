@@ -9,8 +9,8 @@ import VerifyPopUp from "./VerifyPopUp";
 export default function Welcome() {
   const [signIn, setSignIn] = useState(false);
   const [signUp, setSignUp] = useState(false);
- const [verify, setVerify] = useState(false);
-//  const [verifyIncorrect, setVerifyIncorrect] = useState(false);
+  const [verify, setVerify] = useState(false);
+
   function hendlSignIn() {
     setSignIn(true);
   }
@@ -40,7 +40,7 @@ export default function Welcome() {
   }
   return (
     <>
-      {(signIn || signUp) && (
+      {(signIn || signUp || verify) && (
         <>
           <div
             onClick={popuoCloseScreen}
@@ -103,7 +103,9 @@ export default function Welcome() {
               )}
               {verify && (
                 <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center z-50">
-                  <VerifyPopUp />
+                  <VerifyPopUp
+                    popuoCloseScreen={popuoCloseScreen}
+                  />
                 </div>
               )}
               {/* {verifyIncorrect && (

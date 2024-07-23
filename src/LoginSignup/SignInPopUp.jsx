@@ -5,9 +5,8 @@ import FbVector from "../assets/images/svg/fb vector.svg";
 import AppleVector from "../assets/images/svg/apple vector.svg";
 import GoogleVector from "../assets/images/svg/google vector.svg";
 import Password from "../assets/images/svg/password.svg";
-import SignUpPopUp from "../SignUp/SignUpPopUp";
 
-function SignInPopUp({ setSignIn, popuoClose, closeSignInPopUp }) {
+function SignInPopUp({  popuoClose, closeSignInPopUp }) {
   const [showPassword, setShowPassword] = useState(false);
 
   function handleShowPassword() {
