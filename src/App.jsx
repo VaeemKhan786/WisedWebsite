@@ -17,6 +17,7 @@ import Postviewed from "./Home/Postviewed.jsx";
 import DotsPopUp from "./Home/DotsPopUp.jsx";
 // import Postviewed from "./Home/Postviewed";
 import ByStream from "./Bystream/ByStream.jsx";
+import Personalise from "./SignUp/Personalise";
 
 function AppRoutes() {
   return (
@@ -28,13 +29,13 @@ function AppRoutes() {
     //     <Route path="/privacy" element={<PrivacyPolicy />} />
     //   </Route>
     // </Routes>
-    // <Home />
+    <Home />
     // <Spotlight />
     // <PopularGenresSeenAll />
     // <Postviewed/>
     // <Navbar2 />
     // <DotsPopUp/>
-    <ByStream />
+    // <ByStream />
   );
 }
 

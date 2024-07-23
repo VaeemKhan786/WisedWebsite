@@ -37,7 +37,7 @@ function Interests() {
           onChange={(e) => setSearchTerm(e.target.value)} // Update search term
         />
       </div>
-      <div className="flex items-center justify-center gap-5 flex-wrap mt-3 h-[280px] overflow-y-auto">
+      <div className="flex items-center justify-center gap-5 flex-wrap mt-3 h-[280px] overflow-y-auto custom-scrollbar">
         {filteredButtons.length > 0 ? (
           filteredButtons.map((item, index) => {
             const isClicked = clicked.includes(index);
