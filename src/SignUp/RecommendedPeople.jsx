@@ -18,7 +18,7 @@ function RecommendedPeople() {
           placeholder="| Looking for...."
         />
       </div>
-     <div className="mt-8 h-[300px] overflow-y-auto">
+     <div className="mt-8 h-[300px] overflow-y-auto custom-scrollbar">
      {data.recommended.map((item,index)=>{
         return (
             <div key={index} className={`flex items-center justify-between ${index != 0 ? "mt-4" : ""}`}>

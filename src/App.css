@@ -12,6 +12,4 @@ font-family: "Inter", sans-serif !important;
     opacity: 100%;
     transition: 2s all
 }
-.scroll_hidden{
-overflow-x: hidden !important;
-}
+

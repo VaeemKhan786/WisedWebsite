@@ -1,3 +1,31 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+/* .hide-scrollbar {
+    -ms-overflow-style: none; 
+    scrollbar-width: 2px;  
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  } */
+
+  .custom-scrollbar {
+    scrollbar-width: thin;  /* Firefox */
+    scrollbar-color: #4D8AFF transparent;  /* Firefox */
+  
+    /* For Chrome, Safari, and Opera */
+    &::-webkit-scrollbar {
+      width: 2px;
+    }
+  
+    &::-webkit-scrollbar-track {
+      background: transparent;
+    }
+  
+    &::-webkit-scrollbar-thumb {
+      background-color: #4D8AFF;
+      border-radius: 1px;
+    }
+  }
